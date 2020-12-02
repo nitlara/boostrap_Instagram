@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <link
+                rel="stylesheet"
+                href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous"
+        />
+        <link
+                rel="stylesheet"
+                href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+                integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+                crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">  
+        <style>
+        .title {
+            font-family: 'Oleo Script Swash Caps', cursive;
+        }
+        h5 {font-size:16px;}
+        p{font-size:16px;}
+        small{font-size:16px;}
+        .image-height{
+            height: 500px;
+        }
+        .card-columns .card {
+             margin-bottom: .25rem;
+        }
+        .card-columns {
+             column-gap: 0.25rem;
+        }
+        .navbar{
+            margin-bottom:0px;
+        }
+       .post {
+            margin-top: 15px;
+            margin-bottom: 48px!important;
+        }
+       
+        </style>
+        <title>Bootstrap Instagram feed</title>
+    </head>
+    <body>
+<!-- ------------Navbar header ------------ -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+                <div class="container">
+                    <a class="navbar-brand text-secondary h1 title" href="#" >
+                        <i class="fab fa-instagram"></i>
+                        <em>Instagram</h1></em>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <button class="btn btn-success" type="button" data-toggle="modal" data-target="#newPostModal">
+                                Create a new post
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    <i class="fas fa-cog"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+<!-- ------------ Top Menu -------------->
+            <div class="nav-scroller bg-white box-shadow">
+                    <nav class="nav justify-content-center">
+                        <a class="nav-item nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">
+                            <button class="btn btn-outline-secondary border-0" aria-pressed="true">
+                                <i class="fa fa-th"></i>
+                            </button>
+                        </a>
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">
+                            <button class="btn btn-outline-secondary border-0" aria-pressed="true">
+                                <i class="fa fa-square"></i>
+                            </button>
+                        </a>
+                    </nav>
+            </div>
+    <!-- ------------ Top Menu selection -------------->
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container-fluid">
+                        <div class="row no-gutters image-grid">
+                                                 
+                          
+                            <div class= "container"><!--grid  --> 
+                                <div class="card-columns">
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/1	" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/2	" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/3	" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/4	" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/5	" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/6" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/7" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/8" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/9" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/10" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/11" alt="Card image cap"></div>
+                                    <div class="card "> <img class="card-img-top" src="	https://placeimg.com/400/400/tech/12" alt="Card image cap"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container-fluid" style="background-color:#D7DBDD">
+                            <div class="row justify-content-center py-4">
+                            <!--photo feed columna única --> 
+                                <div class= "col-6">
+                                    <div class="card mb-3 post">
+                                        <div class="d-flex flex-row justify-content-between px-2 pt-2">
+                                            <h5 class="card-title">My first photo</h5>
+                                            <p class="text-muted">12/15</p>
+                                        </div>
+                                        <img src="https://placeimg.com/400/400/animals/1" class="card-img-top"  alt="random">
+                                        <div class="card-body p-2">
+                                            <p><strong>23 likes</strong></p>
+                                            <p class="card-text">Some random text about the random picture.</p>
+                                            <div class="d-flex justify-content-between">
+                                                <small class="text-muted"><i class="far fa-heart"></i> Comment...</small>
+                                                <small class="text-muted"><i class="fas fa-ellipsis-v"></i></i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 post">
+                                        <div class="d-flex flex-row justify-content-between px-2 pt-2">
+                                            <h5 class="card-title">My first photo</h5>
+                                            <p class="text-muted">12/15</p>
+                                        </div>
+                                        <img src="https://placeimg.com/400/400/tech/2" class="card-img-top"  alt="random">
+                                        <div class="card-body p-2">
+                                            <p><strong>23 likes</strong></p>
+                                            <p class="card-text">Some random text about the random picture.</p>
+                                            <div class="d-flex justify-content-between">
+                                                <small class="text-muted"><i class="far fa-heart"></i> Comment...</small>
+                                                <small class="text-muted"><i class="fas fa-ellipsis-v"></i></i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 post">
+                                        <div class="d-flex flex-row justify-content-between px-2 pt-2">
+                                            <h5 class="card-title">My first photo</h5>
+                                            <p class="text-muted">12/15</p>
+                                        </div>
+                                        <img src="https://placeimg.com/400/400/tech/3" class="card-img-top"  alt="random">
+                                        <div class="card-body p-2">
+                                            <p><strong>23 likes</strong></p>
+                                            <p class="card-text">Some random text about the random picture.</p>
+                                            <div class="d-flex justify-content-between">
+                                                <small class="text-muted"><i class="far fa-heart"></i> Comment...</small>
+                                                <small class="text-muted"><i class="fas fa-ellipsis-v"></i></i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 post">
+                                        <div class="d-flex flex-row justify-content-between px-2 pt-2">
+                                            <h5 class="card-title">My first photo</h5>
+                                            <p class="text-muted">12/15</p>
+                                        </div>
+                                        <img src="https://placeimg.com/400/400/animals/4" class="card-img-top"  alt="random">
+                                        <div class="card-body p-2">
+                                            <p><strong>23 likes</strong></p>
+                                            <p class="card-text">Some random text about the random picture.</p>
+                                            <div class="d-flex justify-content-between">
+                                                <small class="text-muted"><i class="far fa-heart"></i> Comment...</small>
+                                                <small class="text-muted"><i class="fas fa-ellipsis-v"></i></i></small>
+                                            </div>
+                                        </div>
+                                        <!-- pendiente añadir footer o margen final-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+<!-- ------------ Modal -------------->
+            <div class="modal fade" id="newPostModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="fas fa-map-marker-alt"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+                </div>
+            </div>
+            </div>
+<!-- ------------ SCRIPTS PARA BOOTSTRAP -------------->
+            <div>
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+            </div>
+    </body>
+</html>
